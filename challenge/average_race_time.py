@@ -4,16 +4,21 @@
 import re
 import datetime
 
+
 def get_data():
     """Return content from the 10k_racetimes.txt file"""
     with open('challenge/10k_racetimes.txt', 'rt') as file:
         content = file.read()
     return content
 
+
 def get_rhines_times():
     """Return a list of Jennifer Rhines' race times"""
     races = get_data()
-    pass
+    print(races)
+
+    # pass
+
 
 def get_average():
     """Return Jennifer Rhines' average race time in the format:
@@ -21,5 +26,8 @@ def get_average():
        m corresponds to a minutes digit
        s corresponds to a seconds digit
        M corresponds to a milliseconds digit (no rounding, just the single digit)"""
-    #racetimes = get_rhines_times()
+    # racetimes = get_rhines_times()
     pass
+
+
+get_rhines_times()
